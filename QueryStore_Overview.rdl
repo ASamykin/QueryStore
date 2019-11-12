@@ -3351,13 +3351,14 @@ from data </CommandText>
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!current_mb.Value)</Y>
+                        <Y>=Sum(Fields!current_mb.Value)/100</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
                           <FontSize>9pt</FontSize>
+                          <Format>0.0%</Format>
                         </Style>
-                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Label>=Fields!current_mb.Value/Fields!max_mb.Value</Label>
                         <Visible>true</Visible>
                       </ChartDataLabel>
                       <ToolTip>="Used space: "+cstr(Fields!current_mb.Value)+"MB"</ToolTip>
@@ -3396,13 +3397,14 @@ from data </CommandText>
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Fields!max_mb.Value - Fields!current_mb.Value</Y>
+                        <Y>=(Fields!max_mb.Value - Fields!current_mb.Value)/100</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
                           <FontSize>9pt</FontSize>
+                          <Format>0.0%</Format>
                         </Style>
-                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Label>=(Fields!max_mb.Value - Fields!current_mb.Value)/Fields!max_mb.Value</Label>
                         <Visible>true</Visible>
                       </ChartDataLabel>
                       <ToolTip>="Free space: "+cstr(Fields!max_mb.Value-Fields!current_mb.Value)+"MB"</ToolTip>

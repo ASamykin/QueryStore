@@ -2346,7 +2346,10 @@ OPTION (RECOMPILE)</CommandText>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
+                <TablixMember>
+                  <FixedData>true</FixedData>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -2507,7 +2510,6 @@ OPTION (RECOMPILE)</CommandText>
                       </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
-                  <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
                   <Group Name="query_id">
@@ -2703,6 +2705,8 @@ OPTION (RECOMPILE)</CommandText>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <RepeatColumnHeaders>true</RepeatColumnHeaders>
+            <FixedColumnHeaders>true</FixedColumnHeaders>
             <DataSetName>dsPlanDetails</DataSetName>
             <Top>0.93208in</Top>
             <Left>0.01958in</Left>

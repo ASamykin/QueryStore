@@ -5271,6 +5271,7 @@ from data </CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -7488,7 +7489,7 @@ from data </CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!min_log_bytes_used.Value/128</Value>
+                                  <Value>=Fields!min_tempdb_space_used.Value/128</Value>
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.0;(#,0.0)</Format>
@@ -8325,7 +8326,7 @@ from data </CommandText>
                             </Actions>
                           </ActionInfo>
                           <ToolTip>="Executions"+chr(10)
-+"successful :"+cstr(Fields!execs.Value-Fields!execs_failed.Value)+chr(10)
++"successful : "+cstr(Fields!execs.Value-Fields!execs_failed.Value)+chr(10)
 +"failed : "+cstr(Fields!execs_failed.Value)</ToolTip>
                           <Style>
                             <Border>
@@ -8355,7 +8356,6 @@ from data </CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
