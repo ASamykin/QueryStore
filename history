@@ -1,0 +1,6 @@
+[12-11-2019]
+* QueryStore_Queries : fixed bug with "min tempdb usage" column (showed incorrect info)
+* QueryStore_Plans :  minor formatting enhancements
+
+[07-11-2019]
+* QueryStore_Overview : updated usage graph (%)
